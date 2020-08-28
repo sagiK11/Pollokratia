@@ -1,0 +1,249 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.sagikor.flutter.pollokratia"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/debug/AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[:firebase_analytics] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+15-->[:firebase_analytics] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->[:firebase_analytics] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-68
+16-->[:firebase_analytics] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-65
+17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+17-->[com.google.android.gms:play-services-measurement:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/6cbf91e40fd12df6a046f33e2deeaf80/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:26:5-110
+17-->[com.google.android.gms:play-services-measurement:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/6cbf91e40fd12df6a046f33e2deeaf80/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:26:22-107
+18    <!--
+19 io.flutter.app.FlutterApplication is an android.app.Application that
+20         calls FlutterMain.startInitialization(this); in its onCreate method.
+21         In most cases you can leave this as-is, but you if you want to provide
+22         additional functionality it is fine to subclass or reimplement
+23         FlutterApplication and put your custom class here.
+24    -->
+25    <application
+25-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:8:5-46:19
+26        android:name="io.flutter.app.FlutterApplication"
+26-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:9:9-57
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.1.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/3ae8acf77913112ba07cff775c9265b3/core-1.1.0/AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:extractNativeLibs="false"
+30        android:icon="@mipmap/ic_launcher"
+30-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:11:9-43
+31        android:label="pollokratia" >
+31-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:10:9-36
+32        <activity
+32-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:12:9-40:20
+33            android:name="com.sagikor.flutter.pollokratia.MainActivity"
+33-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:13:13-41
+34            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+34-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:16:13-163
+35            android:hardwareAccelerated="true"
+35-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:17:13-47
+36            android:launchMode="singleTop"
+36-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:14:13-43
+37            android:theme="@style/LaunchTheme"
+37-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:15:13-47
+38            android:windowSoftInputMode="adjustResize" >
+38-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:18:13-55
+39
+40            <!--
+41                 Specifies an Android theme to apply to this Activity as soon as
+42                 the Android process has started. This theme is visible to the user
+43                 while the Flutter UI initializes. After that, this theme continues
+44                 to determine the Window background behind the Flutter UI.
+45            -->
+46            <meta-data
+46-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:23:13-26:17
+47                android:name="io.flutter.embedding.android.NormalTheme"
+47-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:24:15-70
+48                android:resource="@style/NormalTheme" />
+48-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:25:15-52
+49            <!--
+50                 Displays an Android View that continues showing the launch screen
+51                 Drawable until Flutter paints its first frame, then this splash
+52                 screen fades out. A splash screen is useful to avoid any visual
+53                 gap between the end of Android's launch screen and the painting of
+54                 Flutter's first frame.
+55            -->
+56            <meta-data
+56-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:32:13-35:17
+57                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+57-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:33:15-79
+58                android:resource="@drawable/launch_background" />
+58-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:34:15-61
+59
+60            <intent-filter>
+60-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:36:13-39:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:37:17-68
+61-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:37:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:38:17-76
+63-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:38:27-74
+64            </intent-filter>
+65        </activity>
+66        <!--
+67             Don't delete the meta-data below.
+68             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+69        -->
+70        <meta-data
+70-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:43:9-45:33
+71            android:name="flutterEmbedding"
+71-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:44:13-44
+72            android:value="2" />
+72-->/home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/android/app/src/main/AndroidManifest.xml:45:13-30
+73
+74        <service
+74-->[:firebase_analytics] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-16:19
+75            android:name="com.google.firebase.components.ComponentDiscoveryService"
+75-->[:firebase_analytics] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:12:18-89
+76            android:directBootAware="true"
+76-->[com.google.firebase:firebase-common:19.3.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/f6946a9d7be673dd01278f808d806932/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+77            android:exported="false" >
+77-->[com.google.firebase:firebase-auth:19.3.2] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/e8d1b29b5a45b30e18dbb3b5458c2438/jetified-firebase-auth-19.3.2/AndroidManifest.xml:35:13-37
+78            <meta-data
+78-->[:firebase_analytics] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:85
+79                android:name="com.google.firebase.components:io.flutter.plugins.firebaseanalytics.FlutterFirebaseAppRegistrar"
+79-->[:firebase_analytics] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-127
+80                android:value="com.google.firebase.components.ComponentRegistrar" />
+80-->[:firebase_analytics] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-82
+81            <meta-data
+81-->[:firebase_auth] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+82                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
+82-->[:firebase_auth] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
+83                android:value="com.google.firebase.components.ComponentRegistrar" />
+83-->[:firebase_auth] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+84            <meta-data
+84-->[:firebase_database] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+85                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
+85-->[:firebase_database] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-127
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[:firebase_database] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+87            <meta-data
+87-->[:cloud_firestore] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+88                android:name="com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar"
+88-->[:cloud_firestore] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-133
+89                android:value="com.google.firebase.components.ComponentRegistrar" />
+89-->[:cloud_firestore] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+90            <meta-data
+90-->[:firebase_core] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+91                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
+91-->[:firebase_core] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
+92                android:value="com.google.firebase.components.ComponentRegistrar" />
+92-->[:firebase_core] /home/sagikorzack/AndroidStudioProjects/Flutter/pollokratia/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+93            <meta-data
+93-->[com.google.firebase:firebase-auth:19.3.2] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/e8d1b29b5a45b30e18dbb3b5458c2438/jetified-firebase-auth-19.3.2/AndroidManifest.xml:36:13-38:85
+94                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+94-->[com.google.firebase:firebase-auth:19.3.2] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/e8d1b29b5a45b30e18dbb3b5458c2438/jetified-firebase-auth-19.3.2/AndroidManifest.xml:37:17-109
+95                android:value="com.google.firebase.components.ComponentRegistrar" />
+95-->[com.google.firebase:firebase-auth:19.3.2] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/e8d1b29b5a45b30e18dbb3b5458c2438/jetified-firebase-auth-19.3.2/AndroidManifest.xml:38:17-82
+96            <meta-data
+96-->[com.google.firebase:firebase-database:19.3.1] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/83f49ce5adc32bf022b622a9135c3388/jetified-firebase-database-19.3.1/AndroidManifest.xml:32:13-34:85
+97                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+97-->[com.google.firebase:firebase-database:19.3.1] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/83f49ce5adc32bf022b622a9135c3388/jetified-firebase-database-19.3.1/AndroidManifest.xml:33:17-109
+98                android:value="com.google.firebase.components.ComponentRegistrar" />
+98-->[com.google.firebase:firebase-database:19.3.1] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/83f49ce5adc32bf022b622a9135c3388/jetified-firebase-database-19.3.1/AndroidManifest.xml:34:17-82
+99            <meta-data
+99-->[com.google.firebase:firebase-firestore:21.3.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/98c529f536404d8d48b65b40c0b498a9/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:20:13-22:85
+100                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+100-->[com.google.firebase:firebase-firestore:21.3.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/98c529f536404d8d48b65b40c0b498a9/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:21:17-111
+101                android:value="com.google.firebase.components.ComponentRegistrar" />
+101-->[com.google.firebase:firebase-firestore:21.3.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/98c529f536404d8d48b65b40c0b498a9/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:22:17-82
+102            <meta-data
+102-->[com.google.android.gms:play-services-measurement-api:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/109d7ff2678a224756fc14c026e8838d/jetified-play-services-measurement-api-17.5.0/AndroidManifest.xml:30:13-32:85
+103                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+103-->[com.google.android.gms:play-services-measurement-api:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/109d7ff2678a224756fc14c026e8838d/jetified-play-services-measurement-api-17.5.0/AndroidManifest.xml:31:17-139
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[com.google.android.gms:play-services-measurement-api:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/109d7ff2678a224756fc14c026e8838d/jetified-play-services-measurement-api-17.5.0/AndroidManifest.xml:32:17-82
+105            <meta-data
+105-->[com.google.firebase:firebase-installations:16.3.2] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/efe13bbff8228a3bee805271c0892005/jetified-firebase-installations-16.3.2/AndroidManifest.xml:17:13-19:85
+106                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+106-->[com.google.firebase:firebase-installations:16.3.2] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/efe13bbff8228a3bee805271c0892005/jetified-firebase-installations-16.3.2/AndroidManifest.xml:18:17-127
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[com.google.firebase:firebase-installations:16.3.2] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/efe13bbff8228a3bee805271c0892005/jetified-firebase-installations-16.3.2/AndroidManifest.xml:19:17-82
+108        </service>
+109
+110        <activity
+110-->[com.google.firebase:firebase-auth:19.3.2] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/e8d1b29b5a45b30e18dbb3b5458c2438/jetified-firebase-auth-19.3.2/AndroidManifest.xml:24:9-31:50
+111            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+111-->[com.google.firebase:firebase-auth:19.3.2] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/e8d1b29b5a45b30e18dbb3b5458c2438/jetified-firebase-auth-19.3.2/AndroidManifest.xml:25:13-85
+112            android:excludeFromRecents="true"
+112-->[com.google.firebase:firebase-auth:19.3.2] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/e8d1b29b5a45b30e18dbb3b5458c2438/jetified-firebase-auth-19.3.2/AndroidManifest.xml:26:13-46
+113            android:exported="true"
+113-->[com.google.firebase:firebase-auth:19.3.2] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/e8d1b29b5a45b30e18dbb3b5458c2438/jetified-firebase-auth-19.3.2/AndroidManifest.xml:27:13-36
+114            android:launchMode="singleTask"
+114-->[com.google.firebase:firebase-auth:19.3.2] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/e8d1b29b5a45b30e18dbb3b5458c2438/jetified-firebase-auth-19.3.2/AndroidManifest.xml:28:13-44
+115            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+115-->[com.google.firebase:firebase-auth:19.3.2] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/e8d1b29b5a45b30e18dbb3b5458c2438/jetified-firebase-auth-19.3.2/AndroidManifest.xml:29:13-102
+116            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+116-->[com.google.firebase:firebase-auth:19.3.2] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/e8d1b29b5a45b30e18dbb3b5458c2438/jetified-firebase-auth-19.3.2/AndroidManifest.xml:30:13-72
+117        <activity
+117-->[com.google.android.gms:play-services-base:17.1.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/4fd0bd8f21511901ed11d67fedea976e/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+118            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+118-->[com.google.android.gms:play-services-base:17.1.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/4fd0bd8f21511901ed11d67fedea976e/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+119            android:exported="false"
+119-->[com.google.android.gms:play-services-base:17.1.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/4fd0bd8f21511901ed11d67fedea976e/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+120            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+120-->[com.google.android.gms:play-services-base:17.1.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/4fd0bd8f21511901ed11d67fedea976e/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+121
+122        <receiver
+122-->[com.google.android.gms:play-services-measurement:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/6cbf91e40fd12df6a046f33e2deeaf80/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:29:9-33:20
+123            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+123-->[com.google.android.gms:play-services-measurement:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/6cbf91e40fd12df6a046f33e2deeaf80/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:30:13-85
+124            android:enabled="true"
+124-->[com.google.android.gms:play-services-measurement:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/6cbf91e40fd12df6a046f33e2deeaf80/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:31:13-35
+125            android:exported="false" >
+125-->[com.google.android.gms:play-services-measurement:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/6cbf91e40fd12df6a046f33e2deeaf80/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:32:13-37
+126        </receiver>
+127
+128        <service
+128-->[com.google.android.gms:play-services-measurement:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/6cbf91e40fd12df6a046f33e2deeaf80/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:35:9-38:40
+129            android:name="com.google.android.gms.measurement.AppMeasurementService"
+129-->[com.google.android.gms:play-services-measurement:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/6cbf91e40fd12df6a046f33e2deeaf80/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:36:13-84
+130            android:enabled="true"
+130-->[com.google.android.gms:play-services-measurement:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/6cbf91e40fd12df6a046f33e2deeaf80/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:37:13-35
+131            android:exported="false" />
+131-->[com.google.android.gms:play-services-measurement:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/6cbf91e40fd12df6a046f33e2deeaf80/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:38:13-37
+132        <service
+132-->[com.google.android.gms:play-services-measurement:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/6cbf91e40fd12df6a046f33e2deeaf80/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:39:9-43:72
+133            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+133-->[com.google.android.gms:play-services-measurement:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/6cbf91e40fd12df6a046f33e2deeaf80/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:40:13-87
+134            android:enabled="true"
+134-->[com.google.android.gms:play-services-measurement:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/6cbf91e40fd12df6a046f33e2deeaf80/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:41:13-35
+135            android:exported="false"
+135-->[com.google.android.gms:play-services-measurement:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/6cbf91e40fd12df6a046f33e2deeaf80/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:42:13-37
+136            android:permission="android.permission.BIND_JOB_SERVICE" />
+136-->[com.google.android.gms:play-services-measurement:17.5.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/6cbf91e40fd12df6a046f33e2deeaf80/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:43:13-69
+137
+138        <provider
+138-->[com.google.firebase:firebase-common:19.3.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/f6946a9d7be673dd01278f808d806932/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+139            android:name="com.google.firebase.provider.FirebaseInitProvider"
+139-->[com.google.firebase:firebase-common:19.3.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/f6946a9d7be673dd01278f808d806932/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+140            android:authorities="com.sagikor.flutter.pollokratia.firebaseinitprovider"
+140-->[com.google.firebase:firebase-common:19.3.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/f6946a9d7be673dd01278f808d806932/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+141            android:exported="false"
+141-->[com.google.firebase:firebase-common:19.3.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/f6946a9d7be673dd01278f808d806932/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+142            android:initOrder="100" />
+142-->[com.google.firebase:firebase-common:19.3.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/f6946a9d7be673dd01278f808d806932/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+143
+144        <meta-data
+144-->[com.google.android.gms:play-services-basement:17.0.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/8046d7303c2565b32860883ab8f5785b/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+145            android:name="com.google.android.gms.version"
+145-->[com.google.android.gms:play-services-basement:17.0.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/8046d7303c2565b32860883ab8f5785b/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+146            android:value="@integer/google_play_services_version" />
+146-->[com.google.android.gms:play-services-basement:17.0.0] /home/sagikorzack/.gradle/caches/transforms-2/files-2.1/8046d7303c2565b32860883ab8f5785b/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+147    </application>
+148
+149</manifest>

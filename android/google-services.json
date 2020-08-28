@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "830010800284",
+    "firebase_url": "https://pollokratia-1ffbf.firebaseio.com",
+    "project_id": "pollokratia-1ffbf",
+    "storage_bucket": "pollokratia-1ffbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830010800284:android:fb8b337e16daf603999559",
+        "android_client_info": {
+          "package_name": "com.sagikor.flutter.pollokratia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830010800284-2evptp44pdp5e9hc8kmni4vul5bdispq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZf6EIYx0Gcp_BATYJPDJQJtNJ87qYXco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830010800284-2evptp44pdp5e9hc8kmni4vul5bdispq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
