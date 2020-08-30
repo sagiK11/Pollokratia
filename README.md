@@ -1,4 +1,5 @@
 # Pollokratia
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3c6689fe0e28426293c48b8e554bc160)](https://app.codacy.com/manual/sagi1193/Pollokratia?utm_source=github.com&utm_medium=referral&utm_content=sagiK11/Pollokratia&utm_campaign=Badge_Grade_Dashboard)
 [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
  
 ### General Description
