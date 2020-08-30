@@ -1,5 +1,6 @@
 # Pollokratia
 [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/89f8075d81e4428da1b7eb8fa447e8eb)](https://www.codacy.com/manual/sagi1193/Pollokratia?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sagiK11/Pollokratia&amp;utm_campaign=Badge_Grade)
  
 ### General Description
 A cross platform mobile app that aims to improve the current government - citizens communication.
