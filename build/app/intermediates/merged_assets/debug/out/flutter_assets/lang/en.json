@@ -37,6 +37,7 @@
   "against_article_err" : "Against article not long enough, try gain",
   "lets_see_mission" : "Cool, lets see the new mission!",
   "mission_error" : "Alright, i'll try again",
+  "only_checking" : "Alright, I was just checking",
   "mission_success" : "Mission added successfully",
   "menu" : "Menu",
   "check_list" : "Check List",
@@ -47,7 +48,8 @@
   "home_page_text" : "This is a dawn of a new day in the evolution of liberal democracy.\nThe time has arrived that we will oversee our own government and influence our society.",
   "app_idea_first_paragraph": "The democratic idea has been with us for thousands of years.\nThough, it hasn't been fully accomplished.\nFrom now on, instead of that our public representatives will decide which rules to promote,\nthe power is now in our hands.\nWe can influence our most urgent issues that we want to promote, by so we make the idea of 'the rule of the people' to reality.",
   "app_idea_second_paragraph" : "Lately, we witness a change within our knesset.\nOutside forces tries to seize and make an impact on our daily life, they do that by taking advantage the democracy weakness; which is - elections are taking place every four years. ",
-  "app_idea_third_paragraph" : "As of today, there is an election every four years (other than some rare cases).\nThis leads to a 4 years vacuum in which our representatives are free to promote their own interests,\nsome of which that do not corresponds to what the party offered pre the elections.\nThe idea of the app that you are currently using was created exactly of that reason.\nThe time to a phase in our democracy has come and by using this platform we are creating a new era of rule.\nA rule that works for us."
+  "app_idea_third_paragraph" : "As of today, there is an election every four years (other than some rare cases).\nThis leads to a 4 years vacuum in which our representatives are free to promote their own interests,\nsome of which that do not corresponds to what the party offered pre the elections.\nThe idea of the app that you are currently using was created exactly of that reason.\nThe time to a phase in our democracy has come and by using this platform we are creating a new era of rule.\nA rule that works for us.",
+  "find_missions" : "Discover mission!"
 
 
 

@@ -18,56 +18,41 @@ class CustomDrawer extends StatelessWidget {
               style: TextStyle(color: Colors.white, fontSize: 28),
             ),
           ),
+          CustomListTile(icon: Icon(Icons.home), text: "home", navTo: "/Home"),
+          CustomListTile(icon: Icon(Icons.chat), text: "check_list", navTo: "/CheckList"),
+          CustomListTile(icon: Icon(Icons.info), text: "about", navTo: "/AboutMe"),
+          CustomListTile(icon: Icon(Icons.edit), text: "create_mission", navTo: "/MissionCreation"),
           Container(
-            decoration: BoxDecoration(
-              color: Color(0xFFa8c6ea),
-            ),
-            child: ListTile(
-              leading: Icon(Icons.home),
-              title: Text(AppLocalizations.of(context).translate("home")),
-              onTap: () {
-                Navigator.pushNamed(context, '/Home');
-              },
-            ),
-          ),
-          Container(
-            decoration: BoxDecoration(
-              color: Color(0xFFa8c6ea),
-            ),
-            child: ListTile(
-              leading: Icon(Icons.chat),
-              title: Text(AppLocalizations.of(context).translate("check_list")),
-              onTap: () {
-                Navigator.pushNamed(context, '/CheckList');
-              },
-            ),
-          ),
-          Container(
-            decoration: BoxDecoration(
-              color: Color(0xFFa8c6ea),
-            ),
-            child: ListTile(
-              leading: Icon(Icons.info),
-              title: Text(AppLocalizations.of(context).translate("about")),
-              onTap: () {
-                Navigator.pushNamed(context, '/AboutMe');
-              },
-            ),
-          ),
-          Container(
-            height: 250,
-            decoration: BoxDecoration(
-              color: Color(0xFFa8c6ea),
-            ),
-            child: ListTile(
-              leading: Icon(Icons.edit),
-              title: Text(AppLocalizations.of(context).translate("create_mission")),
-              onTap: () {
-                Navigator.of(context).pushNamed('/MissionCreation');
-              },
-            ),
-          ),
+              color: globals.softColor,
+              child: SizedBox(
+                height: 250,
+              ))
         ],
+      ),
+    );
+  }
+}
+
+class CustomListTile extends StatelessWidget {
+  final Icon icon;
+  final String text;
+  final String navTo;
+
+  CustomListTile({this.icon, this.text, this.navTo});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 50,
+      decoration: BoxDecoration(
+        color: globals.softColor,
+      ),
+      child: ListTile(
+        leading: icon,
+        title: Text(AppLocalizations.of(context).translate(text)),
+        onTap: () {
+          Navigator.of(context).pushNamed(navTo);
+        },
       ),
     );
   }

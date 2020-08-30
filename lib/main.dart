@@ -3,22 +3,21 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:pollokratia/authentication.dart';
+import 'package:pollokratia/pages/authentication.dart';
 import 'app_localizations.dart';
 import 'globals.dart' as globals;
 
-import 'package:pollokratia/home_page.dart';
-import 'package:pollokratia/about_app.dart';
-import 'package:pollokratia/check_list_page.dart';
-import 'package:pollokratia/idea_details.dart';
-import 'package:pollokratia/create_mission.dart';
+import 'package:pollokratia/pages/home.dart';
+import 'package:pollokratia/pages/about_app.dart';
+import 'package:pollokratia/pages/check_list.dart';
+import 'package:pollokratia/pages/idea_details.dart';
+import 'package:pollokratia/pages/create_mission.dart';
 
 void main() {
   runApp(PolloKratia());
 }
 
 class PolloKratia extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     //debugPaintSizeEnabled = true;
@@ -26,15 +25,12 @@ class PolloKratia extends StatelessWidget {
     lockScreenOrientation();
     setStatusBarColor();
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
         primaryColor: const Color(0xFF6a9ac8),
         textTheme: TextTheme(
-          headline5:
-              GoogleFonts.assistant(fontSize: 18, fontWeight: FontWeight.w600),
-          bodyText2:
-              GoogleFonts.assistant(fontSize: 18, fontWeight: FontWeight.w600),
+          headline5: GoogleFonts.assistant(fontSize: 18, fontWeight: FontWeight.w600),
+          bodyText2: GoogleFonts.assistant(fontSize: 18, fontWeight: FontWeight.w600),
         ),
       ),
       localizationsDelegates: [
@@ -47,7 +43,7 @@ class PolloKratia extends StatelessWidget {
         const Locale('en', ''), // English, no country code
         const Locale('he', ''), // Hebrew, no country code
       ],
-      initialRoute: '/Home',
+      initialRoute: '/',
       routes: {
         '/': (context) => Authentication(Authentication.LOGIN),
         '/Home': (context) => HomePage(),
@@ -64,7 +60,8 @@ class PolloKratia extends StatelessWidget {
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,
       DeviceOrientation.portraitDown,
-  ]);}
+    ]);
+  }
 
   void setStatusBarColor() {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -72,6 +69,4 @@ class PolloKratia extends StatelessWidget {
       statusBarIconBrightness: Brightness.light,
     ));
   }
-
 }
-

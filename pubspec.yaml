@@ -62,10 +62,7 @@ flutter:
     - assets/images/blue_white_background.png
     - assets/images/like_image.png
     - assets/images/unlike_image.png
-    - assets/icons/icon1.png
     - assets/images/app_background.png
-    - assets/images/bg_1.png
-    - assets/images/bg_2.png
     - lang/en.json
     - lang/he.json
 
