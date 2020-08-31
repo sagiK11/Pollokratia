@@ -65,8 +65,7 @@ class Authentication extends StatelessWidget {
       authenticationType == Authentication.LOGIN
           ? AppLocalizations.of(context).translate("יhello_to_you")
           : AppLocalizations.of(context).translate("have_not_singed"),
-      style: TextStyle(
-          color: Colors.black, fontSize: 40, fontWeight: FontWeight.bold, letterSpacing: 4),
+      style: Theme.of(context).textTheme.headline1,
     );
   }
 
@@ -168,7 +167,7 @@ class Authentication extends StatelessWidget {
           border: InputBorder.none,
           hintText: AppLocalizations.of(context).translate(hint),
           contentPadding: const EdgeInsets.fromLTRB(0, 2, 10, 0),
-          hintStyle: TextStyle(fontSize: 15, color: Colors.grey[800]),
+          hintStyle: Theme.of(context).textTheme.bodyText2,
         ),
       ),
     );

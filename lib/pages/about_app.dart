@@ -21,32 +21,35 @@ class AboutMe extends StatelessWidget {
                   SizedBox(
                     height: 5,
                   ),
-                  titleText(AppLocalizations.of(context).translate("about_app_title")),
+                  titleText(AppLocalizations.of(context).translate("about_app_title"),context),
                   SizedBox(
                     height: 20,
                   ),
-                  paragraphText(AppLocalizations.of(context).translate("terms_of_service")),
+                  paragraphText(AppLocalizations.of(context).translate("terms_of_service"),context),
                   SizedBox(
                     height: 10,
                   ),
-                  paragraphText(AppLocalizations.of(context).translate("terms_of_service_text")),
+                  paragraphText(
+                      AppLocalizations.of(context).translate("terms_of_service_text"), context),
                   SizedBox(
                     height: 20,
                   ),
-                  paragraphText(AppLocalizations.of(context).translate("privacy_policy")),
+                  paragraphText(AppLocalizations.of(context).translate("privacy_policy"), context),
                   SizedBox(
                     height: 10,
                   ),
-                  paragraphText(AppLocalizations.of(context).translate("privacy_policy_text")),
-                  paragraphText(AppLocalizations.of(context).translate("we_value_your_privacy")),
+                  paragraphText(
+                      AppLocalizations.of(context).translate("privacy_policy_text"), context),
+                  paragraphText(
+                      AppLocalizations.of(context).translate("we_value_your_privacy"), context),
                   SizedBox(
                     height: 20,
                   ),
-                  paragraphText(AppLocalizations.of(context).translate("thank_you")),
+                  paragraphText(AppLocalizations.of(context).translate("thank_you"), context),
                   SizedBox(
                     height: 10,
                   ),
-                  paragraphText(AppLocalizations.of(context).translate("thank_you_text"))
+                  paragraphText(AppLocalizations.of(context).translate("thank_you_text"), context)
                 ],
               ),
             ),
@@ -56,15 +59,13 @@ class AboutMe extends StatelessWidget {
     );
   }
 
-  Widget paragraphText(String text) {
+  Widget paragraphText(String text, BuildContext context) {
     return Text(text,
-        style: TextStyle(
-            fontSize: 15, fontWeight: FontWeight.w500, letterSpacing: 1, color: Colors.black));
+        style: Theme.of(context).textTheme.bodyText1);
   }
 
-  Widget titleText(String text) {
+  Widget titleText(String text, BuildContext context) {
     return Text(text,
-        style: TextStyle(
-            fontSize: 18, fontWeight: FontWeight.w500, letterSpacing: 2, color: Colors.black));
+        style:Theme.of(context).textTheme.headline4);
   }
 }

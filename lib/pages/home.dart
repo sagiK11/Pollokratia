@@ -9,12 +9,13 @@ class HomePage extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
-      appBar: AppBar(title: Text(AppLocalizations.of(context).translate("home"))),
+      appBar: AppBar(title: Text(AppLocalizations.of(context).translate("home")),backgroundColor:
+      Theme.of(context).appBarTheme.color,),
       drawer: CustomDrawer(),
       body: SingleChildScrollView(
         child: Container(
           height: screenHeight,
-          padding: EdgeInsets.all(10),
+          padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
           decoration: BoxDecoration(
             image: DecorationImage(image: AssetImage(globals.backgroundColor), fit: BoxFit.fill),
           ),
@@ -26,15 +27,11 @@ class HomePage extends StatelessWidget {
                   height: 60,
                 ),
                 Container(
-                    padding: EdgeInsets.fromLTRB(12, 2, 12, 8),
+                    padding: EdgeInsets.fromLTRB(12, 0, 12, 12),
                     width: screenHeight - 20,
                     child: Text(
                       AppLocalizations.of(context).translate("home_page_title"),
-                      style: TextStyle(
-                          fontSize: 28,
-                          letterSpacing: 1,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black),
+                      style: Theme.of(context).textTheme.headline6,
                     )),
                 SizedBox(
                   height: 10,
@@ -44,11 +41,7 @@ class HomePage extends StatelessWidget {
                   width: 300,
                   child: Text(
                     AppLocalizations.of(context).translate("home_page_text"),
-                    style: TextStyle(
-                        fontSize: 18,
-                        letterSpacing: 1,
-                        fontWeight: FontWeight.w500,
-                        color: Colors.black),
+                    style: Theme.of(context).textTheme.headline4,
                   ),
                 ),
                 SizedBox(
@@ -63,7 +56,7 @@ class HomePage extends StatelessWidget {
                         child: Column(
                           children: <Widget>[
                             Container(
-                              color: globals.softColor,
+                              color: Theme.of(context).backgroundColor,
                               child: Center(
                                 child: FlatButton(
                                   onPressed: () => Navigator.pushNamed(context, '/CheckList'),

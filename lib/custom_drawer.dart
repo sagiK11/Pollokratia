@@ -11,7 +11,7 @@ class CustomDrawer extends StatelessWidget {
         children: <Widget>[
           DrawerHeader(
             decoration: BoxDecoration(
-              color: globals.secondaryColor,
+              color: Theme.of(context).appBarTheme.color,
             ),
             child: Text(
               AppLocalizations.of(context).translate("menu"),
@@ -23,7 +23,7 @@ class CustomDrawer extends StatelessWidget {
           CustomListTile(icon: Icon(Icons.info), text: "about", navTo: "/AboutMe"),
           CustomListTile(icon: Icon(Icons.edit), text: "create_mission", navTo: "/MissionCreation"),
           Container(
-              color: globals.softColor,
+              color: Theme.of(context).backgroundColor,
               child: SizedBox(
                 height: 250,
               ))
@@ -45,11 +45,12 @@ class CustomListTile extends StatelessWidget {
     return Container(
       height: 50,
       decoration: BoxDecoration(
-        color: globals.softColor,
+        color: Theme.of(context).backgroundColor,
       ),
       child: ListTile(
         leading: icon,
-        title: Text(AppLocalizations.of(context).translate(text)),
+        title: Text(AppLocalizations.of(context).translate(text),style: Theme.of(context)
+            .textTheme.bodyText2,),
         onTap: () {
           Navigator.of(context).pushNamed(navTo);
         },

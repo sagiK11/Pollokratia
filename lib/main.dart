@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pollokratia/pages/authentication.dart';
+import 'package:pollokratia/theme.dart';
 import 'app_localizations.dart';
 import 'globals.dart' as globals;
 
@@ -23,16 +23,10 @@ class PolloKratia extends StatelessWidget {
     //debugPaintSizeEnabled = true;
 
     lockScreenOrientation();
-    setStatusBarColor();
+    setStatusBarColor(context);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primaryColor: const Color(0xFF6a9ac8),
-        textTheme: TextTheme(
-          headline5: GoogleFonts.assistant(fontSize: 18, fontWeight: FontWeight.w600),
-          bodyText2: GoogleFonts.assistant(fontSize: 18, fontWeight: FontWeight.w600),
-        ),
-      ),
+      theme: basicTheme(),
       localizationsDelegates: [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
@@ -43,7 +37,7 @@ class PolloKratia extends StatelessWidget {
         const Locale('en', ''), // English, no country code
         const Locale('he', ''), // Hebrew, no country code
       ],
-      initialRoute: '/',
+      initialRoute: '/Home',
       routes: {
         '/': (context) => Authentication(Authentication.LOGIN),
         '/Home': (context) => HomePage(),
@@ -63,9 +57,9 @@ class PolloKratia extends StatelessWidget {
     ]);
   }
 
-  void setStatusBarColor() {
+  void setStatusBarColor(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-      statusBarColor: globals.mainColor,
+      statusBarColor: Theme.of(context).primaryColor,
       statusBarIconBrightness: Brightness.light,
     ));
   }

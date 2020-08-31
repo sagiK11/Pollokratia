@@ -123,7 +123,7 @@ class _CreateMissionState extends State<CreateMission> {
                   child: Container(
                     width: 150,
                     child: FlatButton(
-                      color: Colors.blue[300],
+                      color:Theme.of(context).buttonColor,
                       child: Text(
                         AppLocalizations.of(context).translate("add_mission"),
                         style: TextStyle(color: Colors.black),

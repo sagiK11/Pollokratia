@@ -7,10 +7,6 @@ import 'package:flutter/material.dart';
 import 'app_localizations.dart';
 
 FirebaseUser firebaseUser;
-Color mainColor = Color(0xFF3277cd);
-Color secondaryColor = Color(0xFF5590c8);
-Color softColor = Color(0xFFc4daf5);
-Color softWhite = Color(0xFFfdfdfd);
 
 String backgroundColor = 'assets/images/app_background.png';
 
